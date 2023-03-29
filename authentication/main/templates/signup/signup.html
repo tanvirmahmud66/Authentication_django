@@ -1,0 +1,33 @@
+{% extends 'landing/landing.html' %}
+{%load static%}
+{%block link%}
+    <link rel="stylesheet" href="{%static 'signup/signup.css'%}"/>
+{%endblock link%}
+
+{%block section%}
+  <h1>Signup Form</h1>
+  <form action="" method="post">
+    {%csrf_token%}
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select your gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="retype_password">Retype Password:</label>
+    <input type="password" id="retype_password" name="retype_password" required>
+
+    <input type="submit" value="Signup">
+  </form>
+{%endblock section%}

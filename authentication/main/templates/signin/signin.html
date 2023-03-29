@@ -1,0 +1,19 @@
+{% extends 'landing/landing.html' %}
+{%load static%}
+{%block link%}
+    <link rel="stylesheet" href="{%static 'signin/signin.css'%}"/>
+{%endblock link%}
+
+{%block section%}
+<h1>Signin Form</h1>
+<form action="" method="POST">
+  {%csrf_token%}
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <input type="submit" value="Signin">
+</form>
+{%endblock section%}

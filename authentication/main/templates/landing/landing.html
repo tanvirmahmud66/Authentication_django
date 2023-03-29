@@ -4,6 +4,7 @@
 <head>
 	<title>Home - Landing</title>
 	<link rel="stylesheet" href="{%static 'landing/landing.css'%}">
+    {%block link%} {%endblock link%}
 </head>
 <body>
 	<nav>
@@ -16,11 +17,11 @@
 			<li><a href="#">Contact</a></li>
 		</ul>
 		<div class="buttons">
-			<a href="#" class="signup">Sign Up</a>
-			<a href="#" class="signin">Sign In</a>
+			<a href="{% url 'signup' %}" class="signup">Sign Up</a>
+			<a href="{%url 'signin'%}" class="signin">Sign In</a>
 		</div>
 	</nav>
-	
+	{%block section%} {%endblock section%}
 	<section class="hero">
 		<h1>Welcome to our Landing Page</h1>
 		<p>Discover our amazing products and services.</p>
