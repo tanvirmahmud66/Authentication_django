@@ -1,0 +1,91 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+	background-color: #333;
+	color: #fff;
+}
+
+.logo a {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #fff;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+}
+
+.menu li {
+	margin: 0 1em;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.buttons {
+	display: flex;
+}
+
+.buttons a {
+	margin-left: 1em;
+	background-color: #fff;
+	color: #333;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.hero {
+	padding: 3em;
+	text-align: center;
+	background-color: #eee;
+}
+
+.features {
+	padding: 3em;
+	background-color: #fff;
+}
+
+.features h2 {
+	text-align: center;
+}
+
+.features ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.features li {
+	width: 30%;
+	border: 1px solid #333;
+	padding: 1em;
+	text-align: center;
+}
+
+.cta {
+	padding: 3em;
+	background-color: #eee;
+	text-align: center;
+}
+
+.cta h2 {
+	margin-bottom: 1em;
+}
+
+.cta p {
+	margin-bottom: 2em;
+}
+
+.btn {
+	background-color: #333;
+	color: #fff;
+	padding: 1em 2em;
+	border-radius: 5px;
+	text-decoration: none;
+}
