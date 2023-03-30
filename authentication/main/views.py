@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from main.models import RegistrationData
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 
@@ -17,13 +16,7 @@ def sing_up(request):
         gender = request.POST["gender"]
         password = request.POST["password"]
         repassword = request.POST["retype_password"]
-        if password == repassword:
-            value = RegistrationData(
-                username=username, email=email, gender=gender, password=password)
-            value.save()
-            return HttpResponseRedirect(reverse('signin'))
-        else:
-            return HttpResponse(request, "password doesn't match")
+        print(username, email, gender, password, repassword)
     return render(request, 'signup/signup.html')
 
 
@@ -32,6 +25,7 @@ def log_in(request):
         email = request.POST["email"]
         password = request.POST["password"]
         print(email, password)
+
     return render(request, 'signin/signin.html')
 
 
