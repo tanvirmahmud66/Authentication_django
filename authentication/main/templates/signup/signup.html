@@ -14,13 +14,6 @@
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
 
-    <label for="gender">Gender:</label>
-    <select id="gender" name="gender" required>
-      <option value="">Select your gender</option>
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-      <option value="other">Other</option>
-    </select>
 
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
@@ -29,5 +22,6 @@
     <input type="password" id="retype_password" name="retype_password" required>
 
     <input type="submit" value="Signup">
+    <a href="{%url 'signin'%}">I have already an account</a>
   </form>
 {%endblock section%}
